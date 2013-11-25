@@ -178,27 +178,6 @@ namespace BruleBot
             }
         }
 
-        /*public void IRCWork()
-        {
-            string[] ex;
-            string data;
-            bool shouldRun = true;
-
-            while (shouldRun)
-            {
-                data = StreamRead.ReadLine();
-                Console.WriteLine(data);
-
-                char[] charSeparator = new char[] { ' ' };
-                ex = data.Split(charSeparator, 5);
-
-                if (ex[0] == "PING")
-                {
-                    SendData("PONG", ex[1]);
-                }
-            }
-        }*/
-
         private bool IsKeywordInMemory(string keyword)
         {
             if (!responseMemory.ContainsKey(keyword))
