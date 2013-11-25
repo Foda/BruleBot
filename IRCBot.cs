@@ -154,6 +154,9 @@ namespace BruleBot
             AddResponse("weather", "It's raining flubbers!");
             AddResponse("bacon", "I have bacon, yes I do.");
             AddResponse("dingus", "here's a doohickey—and there's the dingus");
+            AddResponse(".NET", "why use .net when you can buy a .com ya dingus?");
+            AddResponse("python", "my mother wrote snakes once, who cares?");
+            AddResponse("java", "you cant program with coffee ya dingus");
 
             randomQuestions.Add("Who's your fravorite basketball player?");
             randomQuestions.Add("Where is your favorite place to eat a corndog?");
@@ -285,6 +288,18 @@ namespace BruleBot
                 else if (data.Contains("weather") || data.Contains("weather?"))
                 {
                     FireResponse("weather");
+                }
+                else if (data.Contains(".NET") || data.Contains(".net"))
+                {
+                    FireResponse(".NET");
+                }
+                else if (data.Contains("java") || data.Contains("Java"))
+                {
+                    FireResponse("java");
+                }
+                else if (data.Contains("python") || data.Contains("Python"))
+                {
+                    FireResponse("python");
                 }
                 else if (data.Contains("bacon"))
                 {
